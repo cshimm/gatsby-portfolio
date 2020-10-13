@@ -4,7 +4,16 @@ import { Link } from "gatsby"
 import SEO from "../components/SEO"
 
 const Error = () => {
-  return <h2>error page</h2>
+  return (
+    <main className="error-page">
+      <div className="error-container">
+        <h1>Page not found!</h1>
+        <Link to="/" className="btn">
+          back home
+        </Link>
+      </div>
+    </main>
+  )
 }
 
 export default Error

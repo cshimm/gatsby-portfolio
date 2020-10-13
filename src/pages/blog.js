@@ -25,7 +25,6 @@ export const query = graphql`
         desc
         date(formatString: "MMMM Do, YYYY")
         title
-        id
         category
         image {
           childImageSharp {
@@ -34,6 +33,7 @@ export const query = graphql`
             }
           }
         }
+        id
       }
     }
   }
